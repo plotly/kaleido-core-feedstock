@@ -42,10 +42,6 @@ requirements:
     - fonts-conda-forge  # [linux]
     - __osx >=10.10      # [osx]
 
-test:
-  requires:
-    - python
-
 about:
   home: https://github.com/plotly/Kaleido
   license: MIT
