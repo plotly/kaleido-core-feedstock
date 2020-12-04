@@ -1,1 +1,3 @@
 conda_forge_output_validation: true
+docker:
+  image: "condaforge/linux-anvil-cos7-x86_64"
