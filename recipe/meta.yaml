@@ -1,5 +1,5 @@
 {% set name = "kaleido-core" %}
-{% set version = "0.1.0a5" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,16 +7,16 @@ package:
 
 source:
   url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_minimal_linux_x64.zip  # [linux]
-  sha256: 4544791929b7e98cd1049f8e9f994dd9397a5bcefcaf0fb49bd63b6bc7f81459  # [linux]
+  sha256: d1ad55b475c8bf622d961047186ce147a5ab1e45005550abce136c0cef3bac50  # [linux]
 
   url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_mac.zip  # [osx]
-  sha256: 815e77d5858c97921e31d524c172df6a12a7a7f9518548ddb237a23840dc2738  # [osx]
+  sha256: 4a583ee9363a9feed3ed6b7308ffeb1f11e8da57a978583bb7e9b4591dc55e38  # [osx]
 
   url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_win_x64.zip  # [win]
-  sha256: 13f9776a9e87cc327ca6804d310d0c7515f176f9a951ad5bcf9eb77a9c8c6297  # [win]
+  sha256: 58b57a973e660a4e7395e595a277492aa9008e0a25c3446656a52f7652b5f8a6  # [win]
 
 build:
-  number: 1
+  number: 0
   ignore_run_exports:
     # Chromium loads sqlite dynamically
     - sqlite  # [linux]
