@@ -1,19 +1,25 @@
 {% set name = "kaleido-core" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0rc1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_minimal_linux_x64.zip  # [linux]
-  sha256: d1ad55b475c8bf622d961047186ce147a5ab1e45005550abce136c0cef3bac50  # [linux]
+  url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_minimal_linux_x64.zip  # [linux64]
+  sha256: d2c6fd656bb5f4434d1cdd9c5d351e29adaebe030e75643dd7b30327dd171f08  # [linux64]
 
-  url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_mac.zip  # [osx]
-  sha256: 4a583ee9363a9feed3ed6b7308ffeb1f11e8da57a978583bb7e9b4591dc55e38  # [osx]
+  url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_minimal_linux_arm64.zip  # [aarch64]
+  sha256: 59d360156b03fc8dc89a8d9e6458793093cc8f8d286a3b7c5a9bc184f8c6aee3  # [aarch64]
+
+  url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_mac_x64.zip  # [osx]
+  sha256: 245ad5e02d277175276e61248862e0956f6de26e93f76bfa79fd33667f694a5d  # [osx]
+
+  url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_mac_arm64.zip  # [arm64]
+  sha256: 6a80bcabd9bf2b07d4e76409b98c7d057b7cc27e6eddf88077cb46699719e477  # [arm64]
 
   url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_win_x64.zip  # [win]
-  sha256: 58b57a973e660a4e7395e595a277492aa9008e0a25c3446656a52f7652b5f8a6  # [win]
+  sha256: 889b56109f1132071b3b00d2981edd35adc6a6c7b7125f9f2f12329d7feef950  # [win]
 
 build:
   number: 0
@@ -40,7 +46,8 @@ requirements:
     - sqlite  # [linux]
     - fontconfig         # [linux]
     - fonts-conda-forge  # [linux]
-    - __osx >=10.10      # [osx]
+    - __osx >=10.11      # [osx]
+    - mathjax =2.7
 
 about:
   home: https://github.com/plotly/Kaleido
