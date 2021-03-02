@@ -13,7 +13,7 @@ source:
   sha256: 59d360156b03fc8dc89a8d9e6458793093cc8f8d286a3b7c5a9bc184f8c6aee3  # [aarch64]
 
   url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_mac_x64.zip  # [osx]
-  sha256: 245ad5e02d277175276e61248862e0956f6de26e93f76bfa79fd33667f694a5d  # [osx]
+  sha256: 716d0810dd6dd696228f119a5f6db3d7c8ce0ba55f85f83ced749728ff6bf6da  # [osx]
 
   url: https://github.com/plotly/Kaleido/releases/download/v{{ version }}/kaleido_mac_arm64.zip  # [arm64]
   sha256: 6a80bcabd9bf2b07d4e76409b98c7d057b7cc27e6eddf88077cb46699719e477  # [arm64]
