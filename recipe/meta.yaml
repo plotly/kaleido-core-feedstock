@@ -27,8 +27,9 @@ build:
     # Chromium loads sqlite dynamically
     - sqlite  # [linux]
   missing_dso_whitelist:
-    - /usr/lib/*  # [osx]
-    - /System/Library/Frameworks/*  # [osx]
+    - /usr/lib/*  # [osx or arm64]
+    - /System/Library/Frameworks/*  # [osx or arm64]
+  binary_relocation: False  # [osx or arm64]
 
 requirements:
   build:
