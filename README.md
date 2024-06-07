@@ -1,5 +1,12 @@
-About kaleido-core
+kaleido-core-feedstock
 ==================
+
+<div align="center">
+  <a href="https://dash.plotly.com/project-maintenance">
+    <img src="https://dash.plotly.com/assets/images/maintained-by-plotly.png" width="400px" alt="Maintained by Plotly">
+  </a>
+</div>
+
 
 Home: https://github.com/plotly/Kaleido
 
